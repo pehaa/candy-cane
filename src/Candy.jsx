@@ -38,11 +38,11 @@ const Candy = ({ z, index, speed }) => {
   return (
     <group ref={ref} dispose={null}>
       <mesh
-        geometry={nodes["Circle001"].geometry}
+        geometry={nodes["Circle004"].geometry}
         material={materials["white"]}
       />
        <mesh
-        geometry={nodes["Circle001_1"].geometry}
+        geometry={nodes["Circle004_1"].geometry}
         material={materials["red"]}
       />
     </group>

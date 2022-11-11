@@ -7,7 +7,8 @@ const Candy = ({ z, index, speed }) => {
   const ref = useRef(null)
   const { viewport, camera } = useThree()
   const { width, height } = viewport.getCurrentViewport(camera, [0, 0, -z])
-  const { nodes, materials } = useGLTF("/candy-transformed.glb")
+  const { nodes, materials } = useGLTF("/candycane.glb")
+  console.log(nodes, materials)
   const [data] = useState({
     y: THREE.MathUtils.randFloatSpread(height * 2),
     x: THREE.MathUtils.randFloatSpread(1),
@@ -37,13 +38,12 @@ const Candy = ({ z, index, speed }) => {
   return (
     <group ref={ref} dispose={null}>
       <mesh
-        geometry={nodes["Node-Mesh"].geometry}
-        material={materials["lambert3SG.002"]}
-        emissive="orange"
+        geometry={nodes["Circle001"].geometry}
+        material={materials["white"]}
       />
-      <mesh
-        geometry={nodes["Node-Mesh_1"].geometry}
-        material={materials["lambert2SG.002"]}
+       <mesh
+        geometry={nodes["Circle001_1"].geometry}
+        material={materials["red"]}
       />
     </group>
   )

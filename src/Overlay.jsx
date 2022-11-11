@@ -27,11 +27,6 @@ const Overlay = () => {
             CC Attribution.
           </a>
         </p>
-        <p className="small">
-          Candy cane by Poly by Google{" "}
-          <a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a> via{" "}
-          <a href="https://poly.pizza/m/eybaJ6A5xPj">Poly Pizza</a>
-        </p>
       </footer>
     </div>
   )
